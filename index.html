@@ -4,325 +4,85 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy • Manu</title>
-  <meta name="description" content="Privacy policy for Manu – how we collect, use, and protect your data." />
+  <meta name="description" content="Simple privacy policy for Manu." />
   <meta name="theme-color" content="#0ea5e9" />
   <style>
     :root{
-      --bg: #0b1220;           /* page background */
-      --panel: #0f172a;        /* cards */
-      --muted: #94a3b8;        /* text-muted */
-      --text: #e2e8f0;         /* text */
-      --brand-1: #00d1ff;      /* gradient start */
-      --brand-2: #7a5cff;      /* gradient mid */
-      --brand-3: #ff3d77;      /* gradient end */
-      --ring: 24, 160, 251;    /* focus ring rgb */
-      --ok: #10b981;
-      --warn: #f59e0b;
-      --err: #ef4444;
-      --radius: 18px;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --maxw: 1100px;
+      --bg:#0b1220;--panel:#0f172a;--muted:#94a3b8;--text:#e2e8f0;--brand1:#00d1ff;--brand2:#7a5cff;--brand3:#ff3d77;--radius:18px;--shadow:0 10px 30px rgba(0,0,0,.35);--maxw:860px
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{
-      margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Inter, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-      color:var(--text); background:radial-gradient(1200px 800px at 15% 0%, rgba(122,92,255,.18), transparent 60%),
-                         radial-gradient(1200px 800px at 85% 20%, rgba(255,61,119,.14), transparent 60%), var(--bg);
-    }
-    a{color:#7dd3fc; text-decoration:none}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Inter,Roboto,Helvetica Neue,Arial;color:var(--text);background:radial-gradient(1200px 800px at 15% 0%,rgba(122,92,255,.18),transparent 60%),radial-gradient(1200px 800px at 85% 20%,rgba(255,61,119,.14),transparent 60%),var(--bg)}
+    a{color:#7dd3fc;text-decoration:none}
     a:hover{text-decoration:underline}
-    .container{max-width:var(--maxw); margin:0 auto; padding:24px}
-    .header{
-      position:sticky; top:0; z-index:10; backdrop-filter:saturate(140%) blur(10px);
-      background:linear-gradient(90deg, rgba(0,0,0,.25), rgba(0,0,0,.15)); border-bottom:1px solid rgba(255,255,255,.08);
-    }
-    .brand{display:flex; gap:16px; align-items:center}
-    .logo{
-      width:44px; height:44px; border-radius:14px; background:
-        conic-gradient(from -20deg, var(--brand-1), var(--brand-2), var(--brand-3), var(--brand-1));
-      box-shadow:0 6px 18px rgba(0,0,0,.35), inset 0 0 18px rgba(255,255,255,.12);
-    }
-    .brand h1{margin:0; font-size:22px; letter-spacing:.6px}
-    .nav{display:flex; gap:18px; align-items:center; flex-wrap:wrap}
-    .stack{display:flex; justify-content:space-between; align-items:center; gap:16px}
-    .btn{appearance:none; border:0; border-radius:12px; padding:10px 14px; color:#0b1220; background:linear-gradient(135deg, var(--brand-1), var(--brand-3)); font-weight:600; cursor:pointer}
-    .btn:focus{outline:3px solid rgba(var(--ring), .5)}
-    .btn.secondary{background:#12213b; color:var(--text); border:1px solid rgba(255,255,255,.08)}
-
-    .hero{margin:28px auto 18px; padding:24px; background:rgba(15,23,42,.5); border:1px solid rgba(255,255,255,.07); border-radius:var(--radius); box-shadow:var(--shadow)}
-    .hero h2{margin:0 0 6px; font-size:28px}
-    .hero p{margin:0; color:var(--muted)}
-
-    .grid{display:grid; grid-template-columns: 1fr; gap:18px; margin:18px 0 42px}
-    @media (min-width: 900px){ .grid{grid-template-columns: 280px 1fr} }
-
-    .card{background:var(--panel); border:1px solid rgba(255,255,255,.07); border-radius:var(--radius); box-shadow:var(--shadow)}
-    .card h3{margin:0; padding:18px 20px; border-bottom:1px solid rgba(255,255,255,.07); font-size:18px}
-    .card .body{padding:14px 20px}
-    .toc a{display:block; padding:10px 12px; border-radius:10px; color:var(--text)}
-    .toc a:hover{background:rgba(255,255,255,.06)}
-
-    details{border:1px solid rgba(255,255,255,.09); border-radius:12px; padding:10px 12px; background:rgba(255,255,255,.03)}
-    details+details{margin-top:10px}
-    summary{cursor:pointer; font-weight:600}
-
-    code.inline{background:rgba(0,0,0,.3); border:1px solid rgba(255,255,255,.08); padding:2px 6px; border-radius:8px}
-
-    footer{color:var(--muted); border-top:1px solid rgba(255,255,255,.08); margin-top:40px; padding:28px 0}
-
-    .badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px; background:rgba(125, 211, 252, .12); border:1px solid rgba(125,211,252,.25); color:#bae6fd; font-weight:600; font-size:12px}
-    .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+    .header{position:sticky;top:0;z-index:10;backdrop-filter:saturate(140%) blur(10px);background:linear-gradient(90deg,rgba(0,0,0,.25),rgba(0,0,0,.15));border-bottom:1px solid rgba(255,255,255,.08)}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:14px;background:conic-gradient(from -20deg,var(--brand1),var(--brand2),var(--brand3),var(--brand1));box-shadow:0 6px 18px rgba(0,0,0,.35),inset 0 0 18px rgba(255,255,255,.12)}
+    .brand h1{margin:0;font-size:22px;letter-spacing:.6px}
+    .nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+    .btn{appearance:none;border:0;border-radius:12px;padding:10px 14px;color:#0b1220;background:linear-gradient(135deg,var(--brand1),var(--brand3));font-weight:600;cursor:pointer}
+    .btn.secondary{background:#12213b;color:var(--text);border:1px solid rgba(255,255,255,.08)}
+    .card{background:var(--panel);border:1px solid rgba(255,255,255,.07);border-radius:var(--radius);box-shadow:var(--shadow);margin:24px 0}
+    .card .body{padding:18px 20px}
+    h2{margin:0 0 8px}
+    footer{color:var(--muted);border-top:1px solid rgba(255,255,255,.08);margin-top:32px;padding:28px 0}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media print{body{background:#fff;color:#111} a{color:#000} .header,.nav .btn{display:none!important} .card{box-shadow:none;border:1px solid #ddd}}
   </style>
 </head>
 <body>
   <a class="sr-only" href="#content">Skip to content</a>
   <header class="header">
-    <div class="container stack">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:16px">
       <div class="brand">
         <div class="logo" aria-hidden="true"></div>
         <h1>Manu • Privacy Policy</h1>
       </div>
       <nav class="nav" aria-label="Primary">
-        <a href="#policy">Policy</a>
-        <a href="#cookies">Cookies</a>
-        <a href="#your-rights">Your Rights</a>
-        <a href="#contact">Contact</a>
         <button class="btn secondary" id="printBtn" title="Print or Save as PDF">Print / Save PDF</button>
+        <button class="btn" id="download" title="Download this page as HTML">Download HTML</button>
       </nav>
     </div>
   </header>
 
   <main id="content" class="container">
-    <section class="hero card" role="region" aria-labelledby="intro-title">
+    <section class="card" role="region" aria-labelledby="intro">
       <div class="body">
-        <span class="badge" title="This is a template. Replace placeholders.">Template</span>
-        <h2 id="intro-title">Our commitment to your privacy</h2>
-        <p>
-          This policy explains how <strong id="companyName">Manu</strong> ("we", "us") collects, uses, and protects your information when you use our websites, apps, and services.
-          Replace the placeholders below with your own details. This document is provided for informational purposes and does not constitute legal advice.
-        </p>
-        <p><strong>Effective date:</strong> <span id="effectiveDate">YYYY-MM-DD</span></p>
+        <h2 id="intro">Privacy Policy</h2>
+        <p><strong>Developer:</strong> Manu</p>
+        <p><strong>Contact:</strong> <a href="mailto:gamioesl@gmail.com">gamioesl@gmail.com</a></p>
+        <p><strong>Effective date:</strong> <span id="effectiveDate">2025-08-14</span></p>
       </div>
     </section>
 
-    <section class="grid" id="policy">
-      <aside class="card toc">
-        <h3>On this page</h3>
-        <div class="body">
-          <a href="#who-we-are">1. Who we are</a>
-          <a href="#what-we-collect">2. Information we collect</a>
-          <a href="#how-we-use">3. How we use information</a>
-          <a href="#legal-bases">4. Legal bases (GDPR)</a>
-          <a href="#sharing">5. Sharing & transfers</a>
-          <a href="#retention">6. Retention</a>
-          <a href="#security">7. Security</a>
-          <a href="#cookies">8. Cookies & analytics</a>
-          <a href="#your-rights">9. Your rights</a>
-          <a href="#children">10. Children</a>
-          <a href="#changes">11. Changes to this policy</a>
-          <a href="#contact">12. Contact</a>
-        </div>
-      </aside>
-
-      <article class="card">
-        <h3>Privacy Policy</h3>
-        <div class="body">
-          <h4 id="who-we-are">1) Who we are</h4>
-          <p>
-            <strong>Controller:</strong> <span data-edit="company">Manu</span> — <span data-edit="company-legal">Manu Ltd</span> (if applicable).<br/>
-            <strong>Address:</strong> <span data-edit="address">[Your business address]</span><br/>
-            <strong>Email:</strong> <a href="mailto:contact@manu.dev" data-edit="email">contact@manu.dev</a>
-          </p>
-
-          <h4 id="what-we-collect">2) Information we collect</h4>
-          <details open>
-            <summary>Information you provide</summary>
-            <ul>
-              <li>Account details (name, email, password)</li>
-              <li>Support messages, form submissions</li>
-              <li>Billing and payment info (processed via <span data-edit="processor">[Stripe/PayPal/other]</span>)</li>
-            </ul>
-          </details>
-          <details>
-            <summary>Information collected automatically</summary>
-            <ul>
-              <li>Log data (IP address, browser, device, pages viewed)</li>
-              <li>Approximate location (city/country) derived from IP</li>
-              <li>Cookies or similar technologies (see <a href="#cookies">Cookies</a>)</li>
-            </ul>
-          </details>
-          <details>
-            <summary>Information from third parties</summary>
-            <ul>
-              <li>OAuth profile data when you sign in via <span data-edit="oauth">[Google/GitHub/etc.]</span></li>
-              <li>Analytics or advertising partners (aggregated statistics)</li>
-            </ul>
-          </details>
-
-          <h4 id="how-we-use">3) How we use information</h4>
-          <ul>
-            <li>Provide, maintain, and improve our services</li>
-            <li>Create and manage your account; authenticate and secure access</li>
-            <li>Process payments and deliver purchases</li>
-            <li>Communicate with you (service updates, support)</li>
-            <li>Personalize content and measure performance</li>
-            <li>Comply with legal obligations and prevent misuse</li>
-          </ul>
-
-          <h4 id="legal-bases">4) Legal bases (EU/UK GDPR)</h4>
-          <ul>
-            <li><em>Contract</em> – to provide the service you requested</li>
-            <li><em>Legitimate interests</em> – e.g., to improve security and performance</li>
-            <li><em>Consent</em> – for optional cookies/marketing where required</li>
-            <li><em>Legal obligation</em> – to meet regulatory requirements</li>
-          </ul>
-
-          <h4 id="sharing">5) Sharing & international transfers</h4>
-          <p>
-            We do not sell your personal information. We may share data with service providers who process it on our behalf, such as hosting, analytics, email, customer support, and payment processing. When transferring data internationally, we use appropriate safeguards (e.g., Standard Contractual Clauses) where required.
-          </p>
-
-          <h4 id="retention">6) Data retention</h4>
-          <p>
-            We keep personal data only as long as necessary for the purposes described above, after which we delete or anonymize it. Retention periods may vary by record type and legal requirements.
-          </p>
-
-          <h4 id="security">7) Security</h4>
-          <p>
-            We implement technical and organizational measures to protect your data, including encryption in transit (HTTPS), access controls, and regular backups. However, no method of transmission or storage is 100% secure.
-          </p>
-
-          <h4 id="cookies">8) Cookies & analytics</h4>
-          <p>
-            We use necessary cookies to run the site and (optionally) analytics/functional cookies to understand usage. You can update your preferences via the cookie settings below.
-          </p>
-          <div style="display:flex; gap:10px; flex-wrap:wrap; margin:8px 0 16px">
-            <button class="btn" id="cookiePrefsBtn">Cookie settings</button>
-            <button class="btn secondary" id="cookieDecline">Decline non-essential</button>
-          </div>
-
-          <h4 id="your-rights">9) Your rights</h4>
-          <p>
-            Depending on your location, you may have rights to access, correct, delete, port, or restrict the processing of your personal data, and to object to certain processing. If processing is based on consent, you may withdraw consent at any time. To exercise these rights, contact us at <a href="mailto:privacy@manu.dev">privacy@manu.dev</a>.
-          </p>
-          <details>
-            <summary>California (CCPA/CPRA) notice</summary>
-            <p>Residents of California have the right to know, delete, correct, and opt-out of sharing/sale of personal information. We do not sell personal information. To submit a request, contact us using the details below.</p>
-          </details>
-          <details>
-            <summary>EU/UK data subjects</summary>
-            <p>You may contact our data protection contact at <a href="mailto:dpo@manu.dev">dpo@manu.dev</a>. You also have the right to lodge a complaint with your local supervisory authority.</p>
-          </details>
-
-          <h4 id="children">10) Children</h4>
-          <p>
-            Our services are not directed to children under 13 (or the applicable age of digital consent). We do not knowingly collect personal information from children.
-          </p>
-
-          <h4 id="changes">11) Changes to this policy</h4>
-          <p>
-            We may update this policy from time to time. Material changes will be announced on this page. See the <strong>Last updated</strong> date below.
-          </p>
-
-          <h4 id="contact">12) Contact</h4>
-          <p>
-            Email: <a href="mailto:privacy@manu.dev">privacy@manu.dev</a><br/>
-            Postal: <span data-edit="postal">[Your postal address]</span>
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <section class="card" aria-labelledby="generator-title">
-      <h3 id="generator-title">Quick editor</h3>
+    <section class="card" role="region" aria-labelledby="policy">
       <div class="body">
-        <p>Update the placeholders below and this page will reflect your changes instantly.</p>
-        <form id="editor" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:12px">
-          <label>Company/Brand<input type="text" name="companyName" placeholder="Manu" value="Manu"/></label>
-          <label>Legal entity<input type="text" name="legal" placeholder="Manu Ltd"/></label>
-          <label>Address<input type="text" name="address" placeholder="123 Example St, City, Country"/></label>
-          <label>Public email<input type="email" name="email" placeholder="contact@manu.dev"/></label>
-          <label>Privacy email<input type="email" name="privacy" placeholder="privacy@manu.dev"/></label>
-          <label>Effective date<input type="date" name="effective"/></label>
-          <label>Payment processor<input type="text" name="processor" placeholder="Stripe"/></label>
-          <label>OAuth providers<input type="text" name="oauth" placeholder="Google, GitHub"/></label>
-          <div style="display:flex; gap:10px; align-items:end">
-            <button type="button" class="btn" id="apply">Apply</button>
-            <button type="button" class="btn secondary" id="reset">Reset</button>
-            <button type="button" class="btn" id="download">Download HTML</button>
-          </div>
-        </form>
+        <h3 id="policy" style="margin-top:0">What this policy says</h3>
+        <p>
+          I do not collect, store, use, sell, or share any personal data about you when you visit this site or use my projects. There are no cookies, analytics, advertising trackers, or profiling.
+        </p>
+        <h4>Contacting me</h4>
+        <p>
+          If you email me at <a href="mailto:gamioesl@gmail.com">gamioesl@gmail.com</a>, I will use your message only to reply. If you want your message deleted, just ask and I will delete it.
+        </p>
+        <h4>Changes</h4>
+        <p>
+          If I change this policy, I will update the date at the top of this page.
+        </p>
       </div>
     </section>
 
     <footer>
       <div class="container" style="padding:0">
-        <small>Last updated: <span id="lastUpdated">—</span> · This template is for general information only and is not legal advice.</small>
+        <small>Last updated: <span id="lastUpdated">Aug 14, 2025</span></small>
       </div>
     </footer>
   </main>
 
-  <!-- Cookie preferences modal -->
-  <dialog id="cookieDialog" style="border:none; border-radius:16px; padding:0; max-width:640px; width:96%; color:var(--text); background:var(--panel); box-shadow:var(--shadow)">
-    <form method="dialog" style="margin:0">
-      <div style="padding:18px 18px 0; border-bottom:1px solid rgba(255,255,255,.08)"><h3 style="margin:0">Cookie preferences</h3></div>
-      <div style="padding:16px 18px; display:grid; gap:12px">
-        <label style="display:flex; justify-content:space-between; align-items:center; gap:10px">
-          <div><strong>Necessary</strong><br/><span style="color:var(--muted)">Required for the site to function</span></div>
-          <input type="checkbox" checked disabled />
-        </label>
-        <label style="display:flex; justify-content:space-between; align-items:center; gap:10px">
-          <div><strong>Analytics</strong><br/><span style="color:var(--muted)">Helps us understand usage (optional)</span></div>
-          <input type="checkbox" id="pref-analytics" />
-        </label>
-        <label style="display:flex; justify-content:space-between; align-items:center; gap:10px">
-          <div><strong>Functional</strong><br/><span style="color:var(--muted)">Remember choices (optional)</span></div>
-          <input type="checkbox" id="pref-functional" />
-        </label>
-      </div>
-      <div style="padding:14px 18px; display:flex; gap:10px; justify-content:flex-end; border-top:1px solid rgba(255,255,255,.08)">
-        <button class="btn secondary" value="cancel">Cancel</button>
-        <button class="btn" id="savePrefs" value="default">Save</button>
-      </div>
-    </form>
-  </dialog>
-
   <script>
-    // Utility: format current date
-    const fmt = (d) => new Intl.DateTimeFormat(undefined, {year:'numeric', month:'short', day:'2-digit'}).format(d);
-
-    // Populate last updated
-    document.getElementById('lastUpdated').textContent = fmt(new Date());
-
     // Print / Save PDF
     document.getElementById('printBtn').addEventListener('click', () => window.print());
-
-    // Editor interactions
-    const $ = (s, r=document) => r.querySelector(s);
-    const editor = $('#editor');
-    $('#apply').addEventListener('click', () => {
-      const data = Object.fromEntries(new FormData(editor).entries());
-      if (data.companyName) {
-        $('#companyName').textContent = data.companyName;
-        document.title = `Privacy Policy • ${data.companyName}`;
-        document.querySelector('h1').textContent = `${data.companyName} • Privacy Policy`;
-      }
-      if (data.legal) document.querySelector('[data-edit="company-legal"]').textContent = data.legal;
-      if (data.address) document.querySelector('[data-edit="address"]').textContent = data.address;
-      if (data.email) {
-        const mail = document.querySelector('[data-edit="email"]');
-        mail.textContent = data.email; mail.href = `mailto:${data.email}`;
-      }
-      if (data.privacy) {
-        const pm = document.querySelector('#contact a[href^="mailto:privacy@"]');
-        if (pm) { pm.textContent = data.privacy; pm.href = `mailto:${data.privacy}`; }
-      }
-      if (data.processor) document.querySelector('[data-edit="processor"]').textContent = data.processor;
-      if (data.oauth) document.querySelector('[data-edit="oauth"]').textContent = data.oauth;
-      if (data.effective) $('#effectiveDate').textContent = data.effective;
-    });
-    $('#reset').addEventListener('click', () => { editor.reset(); })
 
     // Download HTML
     document.getElementById('download').addEventListener('click', () => {
@@ -331,55 +91,102 @@
       const a = Object.assign(document.createElement('a'), {href:url, download:'privacy-policy.html'});
       document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
     });
-
-    // Cookie preferences
-    const cookieDialog = document.getElementById('cookieDialog');
-    const cookiePrefsBtn = document.getElementById('cookiePrefsBtn');
-    const declineBtn = document.getElementById('cookieDecline');
-    const prefKeys = ['analytics','functional'];
-
-    const loadPrefs = () => {
-      try {
-        const saved = JSON.parse(localStorage.getItem('cookiePrefs')||'{}');
-        document.getElementById('pref-analytics').checked = !!saved.analytics;
-        document.getElementById('pref-functional').checked = !!saved.functional;
-      } catch { /* ignore */ }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy • Manu</title>
+  <meta name="description" content="Simple privacy policy for Manu." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    :root{
+      --bg:#0b1220;--panel:#0f172a;--muted:#94a3b8;--text:#e2e8f0;--brand1:#00d1ff;--brand2:#7a5cff;--brand3:#ff3d77;--radius:18px;--shadow:0 10px 30px rgba(0,0,0,.35);--maxw:860px
     }
-    const savePrefs = () => {
-      const prefs = {
-        analytics: document.getElementById('pref-analytics').checked,
-        functional: document.getElementById('pref-functional').checked,
-        timestamp: new Date().toISOString()
-      };
-      localStorage.setItem('cookiePrefs', JSON.stringify(prefs));
-    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Inter,Roboto,Helvetica Neue,Arial;color:var(--text);background:radial-gradient(1200px 800px at 15% 0%,rgba(122,92,255,.18),transparent 60%),radial-gradient(1200px 800px at 85% 20%,rgba(255,61,119,.14),transparent 60%),var(--bg)}
+    a{color:#7dd3fc;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+    .header{position:sticky;top:0;z-index:10;backdrop-filter:saturate(140%) blur(10px);background:linear-gradient(90deg,rgba(0,0,0,.25),rgba(0,0,0,.15));border-bottom:1px solid rgba(255,255,255,.08)}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:14px;background:conic-gradient(from -20deg,var(--brand1),var(--brand2),var(--brand3),var(--brand1));box-shadow:0 6px 18px rgba(0,0,0,.35),inset 0 0 18px rgba(255,255,255,.12)}
+    .brand h1{margin:0;font-size:22px;letter-spacing:.6px}
+    .nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+    .btn{appearance:none;border:0;border-radius:12px;padding:10px 14px;color:#0b1220;background:linear-gradient(135deg,var(--brand1),var(--brand3));font-weight:600;cursor:pointer}
+    .btn.secondary{background:#12213b;color:var(--text);border:1px solid rgba(255,255,255,.08)}
+    .card{background:var(--panel);border:1px solid rgba(255,255,255,.07);border-radius:var(--radius);box-shadow:var(--shadow);margin:24px 0}
+    .card .body{padding:18px 20px}
+    h2{margin:0 0 8px}
+    footer{color:var(--muted);border-top:1px solid rgba(255,255,255,.08);margin-top:32px;padding:28px 0}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media print{body{background:#fff;color:#111} a{color:#000} .header,.nav .btn{display:none!important} .card{box-shadow:none;border:1px solid #ddd}}
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#content">Skip to content</a>
+  <header class="header">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:16px">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Manu • Privacy Policy</h1>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <button class="btn secondary" id="printBtn" title="Print or Save as PDF">Print / Save PDF</button>
+        <button class="btn" id="download" title="Download this page as HTML">Download HTML</button>
+      </nav>
+    </div>
+  </header>
 
-    loadPrefs();
+  <main id="content" class="container">
+    <section class="card" role="region" aria-labelledby="intro">
+      <div class="body">
+        <h2 id="intro">Privacy Policy</h2>
+        <p><strong>Developer:</strong> Manu</p>
+        <p><strong>Contact:</strong> <a href="mailto:gamioesl@gmail.com">gamioesl@gmail.com</a></p>
+        <p><strong>Effective date:</strong> <span id="effectiveDate">2025-08-14</span></p>
+      </div>
+    </section>
 
-    cookiePrefsBtn.addEventListener('click', () => { loadPrefs(); cookieDialog.showModal(); });
-    declineBtn.addEventListener('click', () => {
-      document.getElementById('pref-analytics').checked = false;
-      document.getElementById('pref-functional').checked = false;
-      savePrefs();
-      alert('Non-essential cookies declined.');
+    <section class="card" role="region" aria-labelledby="policy">
+      <div class="body">
+        <h3 id="policy" style="margin-top:0">What this policy says</h3>
+        <p>
+          I do not collect, store, use, sell, or share any personal data about you when you visit this site or use my projects. There are no cookies, analytics, advertising trackers, or profiling.
+        </p>
+        <h4>Contacting me</h4>
+        <p>
+          If you email me at <a href="mailto:gamioesl@gmail.com">gamioesl@gmail.com</a>, I will use your message only to reply. If you want your message deleted, just ask and I will delete it.
+        </p>
+        <h4>Changes</h4>
+        <p>
+          If I change this policy, I will update the date at the top of this page.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container" style="padding:0">
+        <small>Last updated: <span id="lastUpdated">Aug 14, 2025</span></small>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Print / Save PDF
+    document.getElementById('printBtn').addEventListener('click', () => window.print());
+
+    // Download HTML
+    document.getElementById('download').addEventListener('click', () => {
+      const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = Object.assign(document.createElement('a'), {href:url, download:'privacy-policy.html'});
+      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
     });
-
-    document.getElementById('savePrefs').addEventListener('click', (e) => {
-      e.preventDefault();
-      savePrefs();
-      cookieDialog.close();
-    });
-
-    // Basic print styles
-    const style = document.createElement('style');
-    style.media = 'print';
-    style.textContent = `
-      body{background:#fff;color:#111}
-      header, #generator-title, #editor, #cookieDialog, #cookiePrefsBtn, #cookieDecline, .badge, .nav .btn { display:none !important }
-      .hero, .card{box-shadow:none;border:1px solid #ddd}
-      a{color:#000}
-    `;
-    document.head.appendChild(style);
   </script>
 </body>
 </html>
